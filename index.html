@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MediBrain Pro AI</title>
+</head>
+<body>
+    <h1>🧠 MediBrain Pro AI</h1>
+    
+    <h3>👤 Patient Information</h3>
+    <label>Name:</label><input type="text" id="patientName"><br>
+    <label>Age:</label><input type="number" id="patientAge"><br>
+    <label>Weight (kg):</label><input type="number" id="patientWeight"><br>
+
+    <h3>🎤 Voice Input</h3>
+    <button onclick="startVoice()">Start Talking</button>
+    <p id="voiceOutput">Say your symptoms...</p>
+
+    <h3>📝 Enter Symptoms</h3>
+    <input type="text" id="userInput" placeholder="Enter symptoms" />
+    <button onclick="diagnose()">Diagnose</button>
+    <div id="resultBox"></div>
+
+    <h3>🔬 Lab Test Recommendation</h3>
+    <button onclick="suggestLabTest()">Suggest Test</button>
+    <div id="labResultBox"></div>
+
+    <h3>🤖 Ask MediBrain</h3>
+    <input type="text" id="chatInput" placeholder="Ask a health question..." />
+    <button onclick="chatBot()">Send</button>
+    <div id="chatBox" style="padding:10px;border:1px solid #ccc;margin-top:10px;"></div>
+
+    <h3>📄 Reports</h3>
+    <button onclick="saveReport()">Save Report</button>
+    <button onclick="viewAllReports()">View All</button>
+    <div id="allReports"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
